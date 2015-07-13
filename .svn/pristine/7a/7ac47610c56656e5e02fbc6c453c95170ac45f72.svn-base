@@ -1,0 +1,183 @@
+﻿#topimg{
+    width: 100%;
+}
+
+#img2{
+    width: 100%;
+}
+#img3{
+    width: 100%;
+}
+#img4{
+    width: 100%;
+}
+#img5{
+    width: 100%;
+}
+#img6{
+    width: 100%;
+}
+.video {
+position: absolute;
+top: 2%;
+left: 3%;
+}
+.btnlearn{
+    width: 150px;
+}
+#headerimg{
+    width: 100%;
+}
+#learnMovie{
+width: 240px;
+height: 190px;
+}
+#sampleMovie{
+width: 240px;
+height: 190px;
+}
+.learnvideo {
+position: absolute;
+top: 10%;
+right: 51%;
+}
+.privacy{
+    padding:10px 25px 10px 20px;font-size:11px;line-height:14px;text-align:center;margin:0 0 40px 0; color:#fff; overflow:hidden;font-family: Verdana;
+}
+.btn_index {
+    position: absolute;
+    right: 35%;
+    top: 90%;
+}
+.smalltext {
+font-size: 12px;
+line-height: 14px;
+color: #4C4787;
+font-weight: bold;
+padding-left: 8%;
+}
+.smalltext_sp {
+font-size: 12px;
+line-height: 14px;
+color: #4C4787;
+font-weight: bold;
+padding-left: 8%;
+}
+.smalltextoptin {
+font-size: 10px;
+line-height: 14px;
+color: #4C4787;
+font-weight: bold;
+padding-left: 10%;
+width: 415px;
+}
+.indexfields {
+padding-top: 50px;
+padding-left: 6%;
+}
+.indexfields_sp {
+padding-top: 50px;
+padding-left: 6%;
+}
+#formcontainer_index {
+    border: 1px solid #4E2466;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+   position: relative;
+   background-color: #fff;
+   min-height: 1020px;
+   width: 100%;
+}
+.fields{
+    padding-left: 0;
+}
+video {
+position: absolute;
+top: 10px;
+left: 30px;
+}
+
+#submit{
+    width: 221px;
+    border:0;
+    background-color: #fff;
+}
+
+#myContent{
+width: 193px;
+height: 89px;
+}
+.btnfreesamples {
+    width: 132px;
+}
+.txt {
+/*float: left;*/
+padding: 0 30px 30px 0;
+}
+.btn_index_sp {
+position: absolute;
+right: 47%;
+top: 88%;
+}
+.copyright {
+float: left;
+margin: 15px 0 0 0;
+text-align: center;
+width: 420px;
+font-size: 12px;
+color: #fff;
+}
+.ddlabel
+{
+padding-left:0;
+}
+
+.purpletext_sp {
+text-align: center;
+font-family: Calibri, Verdana, Arial;
+line-height: 1.5;
+color: #6D4897;
+font-weight: 900;
+font-size: 42pt;
+width: 436px;
+}
+
+.request{
+    position: relative;
+    max-height: 257px;
+}
+.purpletext {
+text-align: center;
+font-family: Calibri, Verdana, Arial;
+line-height: 1.5;
+color: #6D4897;
+font-weight: 900;
+font-size: 42pt;
+width: 489px;
+}
+
+.request_one {
+position: relative;
+max-height: 252px;
+}
+
+.request_video {
+position: relative;
+max-height: 284px;
+}
+
+.surveys
+{
+     /*border-top:1px dotted #CCC;*/
+     clear:left;
+     overflow:hidden;
+     font-size:8px;
+     line-height:6px;
+     font-family:Verdana;
+     color:#fff;
+     padding:5px 0px 5px 0px;
+     text-align: center;
+     /*margin:0 20px 0 20px;*/
+     background-color: #4E2466
+}

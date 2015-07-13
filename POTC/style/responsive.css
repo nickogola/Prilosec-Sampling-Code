@@ -1,0 +1,184 @@
+﻿.btn_index {
+    position: absolute;
+    right: 35%;
+    top: 90%;
+}
+#wrapper
+{ 
+    /*max-width:1060px;*/
+    width: 100%;
+    margin:0 auto;
+    box-shadow: 0px 2px 5px #bababa;
+    margin-top:0px;
+    margin-bottom:50px;
+    /*background:url(../Images/background.jpg);*/
+    /*background:url(/images/background.jpg);*/
+    border:0px solid #D2CFE2;
+    background-color: #4E2466;
+    /*min-width: 700px;*/
+}
+#formcontainer_index {
+    border: 1px solid #4E2466;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+   position: relative;
+   background-color: #fff;
+   min-height: 1020px;
+   width: 100%;
+}
+.fields{
+    padding-left: 0;
+}
+.indexfields {
+padding-top: 50px;
+padding-left: 6%;
+}
+
+.indexfields_sp {
+padding-top: 50px;
+padding-left: 6%;
+}
+#learnMovie{
+width: 300px;
+height: 190px;
+}
+#sampleMovie{
+width: 300px;
+height: 190px;
+}
+.video {
+position: absolute;
+top: 2%;
+left: 3%;
+}
+.learnvideo {
+position: absolute;
+top: 10%;
+left: 51%;
+}
+.btnfreesamples {
+    width: 142px;
+}
+
+.btnlearn{
+    width: 190px;
+}
+#topimg{
+    width: 100%;
+}
+#img2{
+    width: 100%;
+}
+#img3{
+    width: 100%;
+}
+#img4{
+    width: 100%;
+}
+#img5{
+    width: 100%;
+}
+#img6{
+    width: 100%;
+}
+#headerimg{
+    width: 100%;
+}
+.smalltext {
+font-size: 12px;
+line-height: 14px;
+color: #4C4787;
+font-weight: bold;
+padding-left: 8%;
+}
+.smalltext_sp {
+font-size: 12px;
+line-height: 14px;
+color: #4C4787;
+font-weight: bold;
+padding-left: 8%;
+}
+#submit{
+    width: 221px;
+    border: 0;
+    background-color: #fff;
+}
+.txt {
+/*float: left;*/
+padding: 0 30px 30px 0;
+}
+#myContent{
+width: 293px;
+height: 189px;
+}
+.privacy{
+    padding:10px 25px 10px 20px;font-size:11px;line-height:14px;text-align:center;margin:0 0 40px 0; color:#fff; overflow:hidden;font-family: Verdana;
+}
+.ddlabel
+{
+padding-left:0;
+}
+.smalltextoptin {
+font-size: 10px;
+line-height: 14px;
+color: #4C4787;
+font-weight: bold;
+padding-left: 10%;
+width: 415px;
+}
+.copyright {
+float: left;
+margin: 15px 0 0 0;
+text-align: center;
+width: 580px;
+font-size: 12px;
+color: #fff;
+}
+.purpletext {
+text-align: center;
+font-family: Calibri, Verdana, Arial;
+line-height: 1.5;
+color: #6D4897;
+font-weight: 900;
+font-size: 42pt;
+}
+
+.purpletext_sp {
+text-align: center;
+font-family: Calibri, Verdana, Arial;
+line-height: 1.5;
+color: #6D4897;
+font-weight: 900;
+font-size: 42pt;
+}
+
+.request {
+position: relative;
+max-height: 392px;
+}
+
+.request_video {
+position: relative;
+max-height: 430px;
+}
+
+.request_one {
+position: relative;
+max-height: 383px;
+}
+
+.surveys
+{
+     /*border-top:1px dotted #CCC;*/
+     clear:left;
+     overflow:hidden;
+     font-size:8px;
+     line-height:6px;
+     font-family:Verdana;
+     color:#fff;
+     padding:5px 0px 5px 0px;
+     text-align: center;
+     /*margin:0 20px 0 20px;*/
+     background-color: #4E2466
+}

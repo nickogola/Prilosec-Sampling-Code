@@ -1,0 +1,101 @@
+C:\Users\n_ogola\Documents\Visual Studio 2012\Projects\POTC\POTC\bin\POTC.dll
+C:\Users\n_ogola\Documents\Visual Studio 2012\Projects\POTC\POTC\bin\POTC.pdb
+C:\Users\n_ogola\Documents\Visual Studio 2012\Projects\POTC\POTC\bin\Antlr3.Runtime.dll
+C:\Users\n_ogola\Documents\Visual Studio 2012\Projects\POTC\POTC\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\n_ogola\Documents\Visual Studio 2012\Projects\POTC\POTC\bin\DotNetOpenAuth.Core.dll
+C:\Users\n_ogola\Documents\Visual Studio 2012\Projects\POTC\POTC\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\n_ogola\Documents\Visual Studio 2012\Projects\POTC\POTC\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\n_ogola\Documents\Visual Studio 2012\Projects\POTC\POTC\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\n_ogola\Documents\Visual Studio 2012\Projects\POTC\POTC\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\n_ogola\Documents\Visual Studio 2012\Projects\POTC\POTC\bin\EntityFramework.dll
+C:\Users\n_ogola\Documents\Visual Studio 2012\Projects\POTC\POTC\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\n_ogola\Documents\Visual Studio 2012\Projects\POTC\POTC\bin\Microsoft.Web.WebPages.OAuth.dll
+C:\Users\n_ogola\Documents\Visual Studio 2012\Projects\POTC\POTC\bin\Newtonsoft.Json.dll
+C:\Users\n_ogola\Documents\Visual Studio 2012\Projects\POTC\POTC\bin\System.Net.Http.dll
+C:\Users\n_ogola\Documents\Visual Studio 2012\Projects\POTC\POTC\bin\System.Net.Http.WebRequest.dll
+C:\Users\n_ogola\Documents\Visual Studio 2012\Projects\POTC\POTC\bin\System.Web.Helpers.dll
+C:\Users\n_ogola\Documents\Visual Studio 2012\Projects\POTC\POTC\bin\System.Web.Mvc.dll
+C:\Users\n_ogola\Documents\Visual Studio 2012\Projects\POTC\POTC\bin\System.Web.Optimization.dll
+C:\Users\n_ogola\Documents\Visual Studio 2012\Projects\POTC\POTC\bin\System.Web.Razor.dll
+C:\Users\n_ogola\Documents\Visual Studio 2012\Projects\POTC\POTC\bin\System.Web.WebPages.Deployment.dll
+C:\Users\n_ogola\Documents\Visual Studio 2012\Projects\POTC\POTC\bin\System.Web.WebPages.dll
+C:\Users\n_ogola\Documents\Visual Studio 2012\Projects\POTC\POTC\bin\System.Web.WebPages.Razor.dll
+C:\Users\n_ogola\Documents\Visual Studio 2012\Projects\POTC\POTC\bin\WebGrease.dll
+C:\Users\n_ogola\Documents\Visual Studio 2012\Projects\POTC\POTC\bin\WebMatrix.Data.dll
+C:\Users\n_ogola\Documents\Visual Studio 2012\Projects\POTC\POTC\bin\WebMatrix.WebData.dll
+C:\Users\n_ogola\Documents\Visual Studio 2012\Projects\POTC\POTC\bin\EntityFramework.xml
+C:\Users\n_ogola\Documents\Visual Studio 2012\Projects\POTC\POTC\bin\Newtonsoft.Json.xml
+C:\Users\n_ogola\Documents\Visual Studio 2012\Projects\POTC\POTC\bin\System.Net.Http.xml
+C:\Users\n_ogola\Documents\Visual Studio 2012\Projects\POTC\POTC\bin\System.Net.Http.WebRequest.xml
+C:\Users\n_ogola\Documents\Visual Studio 2012\Projects\POTC\POTC\bin\System.Web.Helpers.xml
+C:\Users\n_ogola\Documents\Visual Studio 2012\Projects\POTC\POTC\bin\System.Web.Mvc.xml
+C:\Users\n_ogola\Documents\Visual Studio 2012\Projects\POTC\POTC\bin\System.Web.Razor.xml
+C:\Users\n_ogola\Documents\Visual Studio 2012\Projects\POTC\POTC\bin\System.Web.WebPages.xml
+C:\Users\n_ogola\Documents\Visual Studio 2012\Projects\POTC\POTC\bin\System.Web.WebPages.Deployment.xml
+C:\Users\n_ogola\Documents\Visual Studio 2012\Projects\POTC\POTC\bin\System.Web.WebPages.Razor.xml
+C:\Users\n_ogola\Documents\Visual Studio 2012\Projects\POTC\POTC\bin\WebMatrix.Data.xml
+C:\Users\n_ogola\Documents\Visual Studio 2012\Projects\POTC\POTC\bin\Microsoft.Web.WebPages.OAuth.xml
+C:\Users\n_ogola\Documents\Visual Studio 2012\Projects\POTC\POTC\bin\WebMatrix.WebData.xml
+C:\Users\n_ogola\Documents\Visual Studio 2012\Projects\POTC\POTC\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\n_ogola\Documents\Visual Studio 2012\Projects\POTC\POTC\bin\DotNetOpenAuth.Core.xml
+C:\Users\n_ogola\Documents\Visual Studio 2012\Projects\POTC\POTC\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\n_ogola\Documents\Visual Studio 2012\Projects\POTC\POTC\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\n_ogola\Documents\Visual Studio 2012\Projects\POTC\POTC\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\n_ogola\Documents\Visual Studio 2012\Projects\POTC\POTC\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\n_ogola\Documents\Visual Studio 2012\Projects\POTC\POTC\obj\Debug\POTC.dll
+C:\Users\n_ogola\Documents\Visual Studio 2012\Projects\POTC\POTC\obj\Debug\POTC.pdb
+C:\Users\n_ogola\Documents\Visual Studio 2012\Projects\POTC\POTC\obj\Debug\POTC.csprojResolveAssemblyReference.cache
+E:\POTC\POTC\bin\POTC.dll.config
+E:\POTC\POTC\bin\POTC.dll
+E:\POTC\POTC\bin\POTC.pdb
+E:\POTC\POTC\bin\Antlr3.Runtime.dll
+E:\POTC\POTC\bin\DotNetOpenAuth.AspNet.dll
+E:\POTC\POTC\bin\DotNetOpenAuth.Core.dll
+E:\POTC\POTC\bin\DotNetOpenAuth.OAuth.Consumer.dll
+E:\POTC\POTC\bin\DotNetOpenAuth.OAuth.dll
+E:\POTC\POTC\bin\DotNetOpenAuth.OpenId.dll
+E:\POTC\POTC\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+E:\POTC\POTC\bin\EntityFramework.dll
+E:\POTC\POTC\bin\Microsoft.Web.Infrastructure.dll
+E:\POTC\POTC\bin\Microsoft.Web.WebPages.OAuth.dll
+E:\POTC\POTC\bin\Newtonsoft.Json.dll
+E:\POTC\POTC\bin\System.Net.Http.dll
+E:\POTC\POTC\bin\System.Net.Http.Formatting.dll
+E:\POTC\POTC\bin\System.Net.Http.WebRequest.dll
+E:\POTC\POTC\bin\System.Web.Helpers.dll
+E:\POTC\POTC\bin\System.Web.Http.dll
+E:\POTC\POTC\bin\System.Web.Http.WebHost.dll
+E:\POTC\POTC\bin\System.Web.Mvc.dll
+E:\POTC\POTC\bin\System.Web.Optimization.dll
+E:\POTC\POTC\bin\System.Web.Razor.dll
+E:\POTC\POTC\bin\System.Web.WebPages.Deployment.dll
+E:\POTC\POTC\bin\System.Web.WebPages.dll
+E:\POTC\POTC\bin\System.Web.WebPages.Razor.dll
+E:\POTC\POTC\bin\WebGrease.dll
+E:\POTC\POTC\bin\WebMatrix.Data.dll
+E:\POTC\POTC\bin\WebMatrix.WebData.dll
+E:\POTC\POTC\bin\EntityFramework.xml
+E:\POTC\POTC\bin\Newtonsoft.Json.xml
+E:\POTC\POTC\bin\System.Net.Http.xml
+E:\POTC\POTC\bin\System.Net.Http.Formatting.xml
+E:\POTC\POTC\bin\System.Net.Http.WebRequest.xml
+E:\POTC\POTC\bin\System.Web.Helpers.xml
+E:\POTC\POTC\bin\System.Web.Http.xml
+E:\POTC\POTC\bin\System.Web.Http.WebHost.xml
+E:\POTC\POTC\bin\System.Web.Mvc.xml
+E:\POTC\POTC\bin\System.Web.Razor.xml
+E:\POTC\POTC\bin\System.Web.WebPages.xml
+E:\POTC\POTC\bin\System.Web.WebPages.Deployment.xml
+E:\POTC\POTC\bin\System.Web.WebPages.Razor.xml
+E:\POTC\POTC\bin\WebMatrix.Data.xml
+E:\POTC\POTC\bin\Microsoft.Web.WebPages.OAuth.xml
+E:\POTC\POTC\bin\WebMatrix.WebData.xml
+E:\POTC\POTC\bin\DotNetOpenAuth.AspNet.xml
+E:\POTC\POTC\bin\DotNetOpenAuth.Core.xml
+E:\POTC\POTC\bin\DotNetOpenAuth.OAuth.Consumer.xml
+E:\POTC\POTC\bin\DotNetOpenAuth.OAuth.xml
+E:\POTC\POTC\bin\DotNetOpenAuth.OpenId.xml
+E:\POTC\POTC\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+E:\POTC\POTC\obj\Debug\POTC.csprojResolveAssemblyReference.cache
+E:\POTC\POTC\obj\Debug\POTC.dll
+E:\POTC\POTC\obj\Debug\POTC.pdb

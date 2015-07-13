@@ -1,0 +1,153 @@
+﻿@{
+    ViewBag.Title = "LearnMore";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script type="text/javascript">
+   (function ($) {
+       $('#slide2').on('click', function (e) {
+           alert('hello');
+           e.preventDefault();
+           $('#slideTwo').show();
+       });
+   });
+
+   function show() {
+      // alert('hello');
+       $('#slideTwo').show();
+   }
+</script>
+<div id="formcontainer_learn"> 
+    <div id="slideOne"> 
+       <div class="alwaysheader @POTC.Extensions.Translate("request_one","request_one_sp", Request.QueryString["lang"])">
+          <img  id="topimg" src="~/Images/@POTC.Extensions.Translate("learn_more_one.jpg", "learn_more_one_sp.jpg", Request.QueryString["lang"])" alt="" />
+               <div class="@POTC.Extensions.Translate("btn_request_top","btn_request_top_sp", Request.QueryString["lang"])">
+         @*<a href="/home/@POTC.Extensions.Translate("index", "index?lang=sp", Request.QueryString["lang"])"><input type="image" src="~/Images/@POTC.Extensions.Translate("request_btn.png","", Request.QueryString["lang"])" style="@POTC.Extensions.Translate("display: block","display: none;", Request.QueryString["lang"])" /></a>*@
+         <input type="image" class="btnlearn" src="~/Images/@POTC.Extensions.Translate("request_btn.png","", Request.QueryString["lang"])" style="@POTC.Extensions.Translate("display: block","display: none;", Request.QueryString["lang"])" onClick="javascript: location.href = '/home/@POTC.Extensions.Translate("index", "index?lang=sp", Request.QueryString["lang"])    '" />
+     </div>
+             </div>
+      <div  class="video" style="display: @POTC.Extensions.Translate("block", "none", Request.QueryString["lang"]);">
+          <video id="sampleMovie" preload controls poster="https://prilosec-otc.safeprocessing.com/Images/larrycableguy.jpg">
+               <source src="~/video/PGPO0545000H.mp4" type="video/mp4" />
+  <object width="440" height="290">
+	<param name="movie" value="~/video/PGPO0545000H.swf" />
+  <param name="LOOP" value="false">
+      	    <embed src="~/video/PGPO0545000H.swf" width="440" height="290" loop="false" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" />
+    </object>
+
+</video>
+           @* <video id="sampleMovie" preload controls poster="https://prilosec-otc.safeprocessing.com/Images/larrycableguy.jpg">
+               <source src="~/video/PGPO0545000H.mp4" type="video/mp4" />
+          
+                <object type="application/x-shockwave-flash" 
+            data="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" 
+            width="440" height="290">
+                  <param name="movie" value="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf">
+                  <param name="quality" value="high">
+                  <param name="wmode" value="opaque">
+                  <param name="swfversion" value="11.0.0.0">
+		          <param name="flashVars" value="config={'playlist':['https%3A%2F%2Fprilosec-otc.safeprocessing.com%2FImages%2Flarrycableguy.jpg',{'url':'https%3A%2F%2Fprilosec-otc.safeprocessing.com%2Fvideo%2FPGPO0545000H.mp4','autoPlay':false}]}" />
+                  <param name="expressinstall" value="https://code.google.com/p/swfobject/source/browse/trunk/swfobject/expressInstall.swf">
+                  <!-- This param tag prompts users with Flash Player 6.0 r65 and higher to download the latest version of Flash Player. Delete it if you don’t want users to see the prompt. -->
+                  <param name="expressinstall" value="https://code.google.com/p/swfobject/source/browse/trunk/swfobject/expressInstall.swf">
+                  <!-- Next object tag is for non-IE browsers. So hide it from IE using IECC. -->
+                  <!--[if !IE]>-->
+                  <object type="application/x-shockwave-flash" data="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" width="440" height="290">
+                    <!--<![endif]-->
+                    <param name="quality" value="high">
+                    <param name="wmode" value="opaque">
+                    <param name="swfversion" value="11.0.0.0">
+                    <param name="expressinstall" value="https://code.google.com/p/swfobject/source/browse/trunk/swfobject/expressInstall.swf">
+                    <!-- The browser displays the following alternative content for users with Flash Player 6.0 and older. -->
+                    <div>
+                      <h4>Content on this page requires a newer version of Adobe Flash Player.</h4>
+                      <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" width="112" height="33" /></a></p>
+                    </div>
+                    <!--[if !IE]>-->
+                  </object>
+                  <!--<![endif]-->
+                </object>
+              <object type="application/x-shockwave-flash" data="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" width="440" height="290">
+                <param name="movie" value="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" />
+                <param name="allowFullScreen" value="true" />
+                <param name="wmode" value="transparent" />
+                <param name="flashVars" value="config={'playlist':['https://prilosec-otc.safeprocessing.com/Images/larrycableguy.jpg',{'url':'https://prilosec-otc.safeprocessing.com/video/PGPO0545000H.mp4','autoPlay':false}]}" />
+             
+                </object>
+           </video>*@
+       @*         <video controls="controls" poster="https://prilosec-otc.safeprocessing.com/Images/larrycableguy.jpg" width="440" height="290">
+	<source src="https://prilosec-otc.safeprocessing.com/video/PGPO0545000H.mp4" type="video/mp4" />
+	<object type="application/x-shockwave-flash" data="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" width="440" height="290">
+		<param name="movie" value="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" />
+		<param name="allowFullScreen" value="true" />
+		<param name="wmode" value="transparent" />
+		<param name="flashVars" value="config={'playlist':['https%3A%2F%2Fprilosec-otc.safeprocessing.com%2FImages%2Flarrycableguy.jpg',{'url':'https%3A%2F%2Fprilosec-otc.safeprocessing.com%2Fvideo%2FPGPO0545000H.mp4','autoPlay':false}]}" />
+		<img alt="Sample Movie" src="https://prilosec-otc.safeprocessing.com/Images/larrycableguy.jpg" width="440" height="290" title="No video playback capabilities, please download the video below" />
+	</object>
+</video>*@
+         </div>
+ 
+</div>
+
+    <div id="slideTwo"> 
+       <div class="alwaysheader @POTC.Extensions.Translate("request_video","request_two_sp", Request.QueryString["lang"])">
+          <img  id="img2" src="~/Images/@POTC.Extensions.Translate("learn_more_two.jpg", "learn_more_two_sp.jpg", Request.QueryString["lang"])" alt="" />
+             <div class="@POTC.Extensions.Translate("btn_request_two","btn_request_two_sp", Request.QueryString["lang"])">
+         @*<a href="/home/@POTC.Extensions.Translate("index", "index?lang=sp", Request.QueryString["lang"])"><input type="image" src="~/Images/@POTC.Extensions.Translate("request_btn.png","request_btn_sp.png", Request.QueryString["lang"])" /></a>*@
+         <input type="image" class="btnlearn"  src="~/Images/@POTC.Extensions.Translate("request_btn.png","request_btn_sp.png", Request.QueryString["lang"])" onClick="javascript: location.href = '/home/@POTC.Extensions.Translate("index", "index?lang=sp", Request.QueryString["lang"])'" />
+     </div>
+             </div>
+       
+     <div class="alwaysheader @POTC.Extensions.Translate("request_three","request_three_sp", Request.QueryString["lang"])">
+          <img  id="img3" src="~/Images/@POTC.Extensions.Translate("learn_more_three.jpg", "learn_more_three_sp.jpg", Request.QueryString["lang"])" alt="" />
+            <div class="@POTC.Extensions.Translate("btn_request","btn_request", Request.QueryString["lang"])">
+         @*<a href="/home/@POTC.Extensions.Translate("index", "index?lang=sp", Request.QueryString["lang"])"><input type="image" src="~/Images/@POTC.Extensions.Translate("request_btn.png","", Request.QueryString["lang"])" style="@POTC.Extensions.Translate("display: block","display: none;", Request.QueryString["lang"])" /></a>*@
+         <input type="image" class="btnlearn"  src="~/Images/@POTC.Extensions.Translate("request_btn.png","", Request.QueryString["lang"])" style="@POTC.Extensions.Translate("display: block","display: none;", Request.QueryString["lang"])" onClick="javascript: location.href = '/home/@POTC.Extensions.Translate("index", "index?lang=sp", Request.QueryString["lang"])'" />
+     </div>
+             </div>
+        <div class="alwaysheader @POTC.Extensions.Translate("request","request_four_sp", Request.QueryString["lang"])">
+          <img  id="img4" src="~/Images/@POTC.Extensions.Translate("learn_more_four.jpg", "learn_more_four_sp.jpg", Request.QueryString["lang"])" alt="" />
+                   <div class="@POTC.Extensions.Translate("btn_request_four_sp", "btn_request_four", Request.QueryString["lang"])">
+         @*<a href="/home/@POTC.Extensions.Translate("index", "index?lang=sp", Request.QueryString["lang"])"><input type="image" src="~/Images/@POTC.Extensions.Translate("request_btn.png","request_btn_sp.png", Request.QueryString["lang"])" /></a>*@
+         <input type="image" class="btnlearn"  src="~/Images/@POTC.Extensions.Translate("request_btn.png","request_btn_sp.png", Request.QueryString["lang"])" onClick="javascript: location.href = '/home/@POTC.Extensions.Translate("index", "index?lang=sp", Request.QueryString["lang"])'" />
+     </div>
+            <div  class="learnvideo" style="display: @POTC.Extensions.Translate("block", "none", Request.QueryString["lang"]);">
+               
+<video id="learnMovie" preload controls poster="https://prilosec-otc.safeprocessing.com/Images/heartburnvideo.jpg">
+   <source src="~/video/MOA_Animation.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+
+	<object width="440" height="290">
+	<param name="movie" value="~/video/Panel_4_Video.swf" />
+	<embed src="~/video/Panel_4_Video.swf" width="440" height="290" />
+	</object>
+    <p>Sorry, your browser cannot play this video. Please update your browser</p>
+	
+</video>
+              @*     <video id="learnMovie" preload controls poster="https://prilosec-otc.safeprocessing.com/Images/heartburnvideo.jpg">
+                <source src="~/video/MOA_Animation.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+               <object type="application/x-shockwave-flash" data="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" width="440" height="290">
+		<param name="movie" value="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" />
+		<param name="allowFullScreen" value="true" />
+		<param name="wmode" value="transparent" />
+		<param name="flashVars" value="config={'playlist':['https%3A%2F%2Fprilosec-otc.safeprocessing.com%2FImages%2Fheartburnvideo.jpg',{'url':'https%3A%2F%2Fprilosec-otc.safeprocessing.com%2Fvideo%2FMOA_Animation.mp4','autoPlay':false}]}" />
+		
+	</object>
+           </video>*@
+         </div>
+             </div>
+         
+         <div class="alwaysheader @POTC.Extensions.Translate("request","request_three_sp", Request.QueryString["lang"])">
+          <img  id="img5" src="~/Images/@POTC.Extensions.Translate("learn_more_five.jpg", "learn_more_five_sp.jpg", Request.QueryString["lang"])" alt="" />
+       <div class="@POTC.Extensions.Translate("btn_request_middle","btn_request_middle_sp", Request.QueryString["lang"])">
+         @*<a href="/home/@POTC.Extensions.Translate("index", "index?lang=sp", Request.QueryString["lang"])"><input type="image" src="~/Images/request_btn.png" style="@POTC.Extensions.Translate("display: block","display: none;", Request.QueryString["lang"])" /></a>*@
+         <input type="image" class="btnlearn" src="~/Images/@POTC.Extensions.Translate("request_btn.png","", Request.QueryString["lang"])" style="@POTC.Extensions.Translate("display: block","display: none;", Request.QueryString["lang"])" onClick="javascript: location.href = '/home/@POTC.Extensions.Translate("index", "index?lang=sp", Request.QueryString["lang"])'" />
+     </div>
+             </div>
+        <div class="alwaysheader @POTC.Extensions.Translate("request","request_six_sp", Request.QueryString["lang"])" style="display:@POTC.Extensions.Translate("none;", "block;", Request.QueryString["lang"])">
+          <img  id="img6" src="~/Images/@POTC.Extensions.Translate("learn_more_six_sp.jpg", "learn_more_six_sp.jpg", Request.QueryString["lang"])" alt="" />
+       <div class="@POTC.Extensions.Translate("btn_request_two","btn_request_six_sp", Request.QueryString["lang"])">
+         @*<a href="/home/@POTC.Extensions.Translate("index", "index?lang=sp", Request.QueryString["lang"])"><input type="image" src="~/Images/request_btn.png" style="@POTC.Extensions.Translate("display: block","display: none;", Request.QueryString["lang"])" /></a>*@
+         <input type="image" class="btnlearn"  src="~/Images/@POTC.Extensions.Translate("request_btn.png","request_btn_sp.png", Request.QueryString["lang"])" onClick="javascript: location.href = '/home/@POTC.Extensions.Translate("index", "index?lang=sp", Request.QueryString["lang"])'" />
+     </div>
+             </div>
+    </div>
+</div>

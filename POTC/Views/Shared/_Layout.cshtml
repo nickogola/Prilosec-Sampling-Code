@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Prilosec OTC Sample Giveaway</title>
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width" />
+      @*  @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")*@
+        <link href="~/style/style.css" rel="stylesheet" />
+     <link rel="stylesheet" media="screen and (max-width: 930px) and (min-width: 581px)" href="~/style/responsive.css" />
+     <link rel='stylesheet' media='screen and (max-width: 580px)' href="~/style/responsive2.css" />
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/Scripts/swfobject.js"></script>
+    <script src="~/Scripts/jquery.media.js"></script>
+    @*<script src="~/Scripts/swfobject_modified.js"></script>*@
+    <!--[if lte IE 8]>
+      <script src="~/Scripts/html5shiv.js"></script>
+    <![endif]-->
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+          <script type="text/javascript">
+        swfobject.embedSWF("/video/Panel_4_Video.swf", "myContent", "440", "290", "9.0.0");
+    </script>
+        <script>
+              (function ($) {
+                  $('.media').media({ width: 400, height: 300, autoplay: true });
+              });
+        </script>
+    </head>
+    <body>      
+    <div id="wrapper">       
+        <div id="overlay"></div>      
+        <div id="header" style="position: relative;">
+            <div style="position:absolute;top:2px;left:8px;height:43px;cursor:pointer;width:250px;z-index:1;" onclick="window.open('https://prilosec-otc.safeprocessing.com','_self');">
+                    
+                </div>
+              <div style="position:absolute;top:9px;right: 7%;height:43px;cursor:pointer;width: 150px;z-index:1;">
+                    @*<a href="/home/@POTC.Extensions.Translate("learnmore", "learnmore?lang=sp", Request.QueryString["lang"])"><input type="image" src="~/Images/@POTC.Extensions.Translate("learn_more_btn.png","learn_more_btn_sp.jpg", Request.QueryString["lang"])" /></a>*@
+                    @if (Request.Url.AbsoluteUri.Contains("learnmore"))
+        {
+                    @:<input type="image" class="btnfreesamples" src="/Images/@POTC.Extensions.Translate("request_btn.png","request_btn_sp.png", Request.QueryString["lang"])" width="162" onClick="javascript: location.href = '/home?lang=@Request.QueryString["lang"]'"/>
+                    }
+                  else {
+                    @:<input type="image" class="btnfreesamples" src="/Images/@POTC.Extensions.Translate("learn_more_btn.png","learn_more_btn_sp.jpg", Request.QueryString["lang"])" onClick="javascript: location.href = '/home/learnmore?lang=@Request.QueryString["lang"]'"/>
+                        
+                    }
+                </div>
+            <img id="headerimg" src="~/Images/header.jpg" alt="Prilosec OTC Sample Giveaway" />
+        </div>
+         <div id="languages" runat="server" style="PADDING-RIGHT: 80px; font-family: Verdana; text-align: right;">
+         <a href="@Request.Url.LocalPath?lang=en" style="color:#fff">ENGLISH |</a>  <a href="@Request.Url.LocalPath?lang=sp" style="color:#fff">SPANISH</a>   </div>
+       <div style="height: 100%;">
+      
+        @RenderBody() 
+        <div style="background-color: #4E2466;">
+            <div class="clickhere">
+        <a href=@POTC.Extensions.Translate("http://www.prilosecotc.com/AboutPrilosecOTC/Side-Effects", "http://www.prilosecotces.com/acidez-estomacal-remedios/prilosec-OTC", Request.QueryString["lang"]) target="_blank" style="color:#fff; text-decoration: none;">@POTC.Extensions.Translate("Click here to see product usage instructions and warnings", "Haz clic aquí para ver las instrucciones de como usar Prilosec OTC.", Request.QueryString["lang"])</a>
+            </div>
+        <div id="footer">  
+           <p>@POTC.Extensions.Translate("*It's possible while taking Prilosec OTC. Use as directed for 14 days to treat frequent heartburn. Do not take for more than 14 days or more often than every 4 months unless directed by a doctor. May take 1 to 4 days for full effect. Not for immediate relief.", "*Es posible mientras tomas Prilosec OTC. Usa el medicamento según se indica por 14 días, para tratar la acidez estomacal frecuente. No tomes por más de 14 días ni más a menudo de cada 4 meses, a menos que así lo indique tu médico. Puede tomar 1-4 días para tener un efecto completo. No ofrece alivio inmediato.", Request.QueryString["lang"])
+           </p>
+       </div>
+            <div class="surveys">
+                <p>@POTC.Extensions.Translate("†^ Symphony Health Solutions ProVoiceTM Survey, Jan 2005 – Mar 2014", "^Encuesta de Symphony Health Solutions ProVoice™, enero 2005 – marzo 2014", Request.QueryString["lang"])</p>
+                <p>@POTC.Extensions.Translate("^^ Pharmacy Times Surveys, Acid Reducer/Heartburn Categories 2006 - 2014", "†Encuestas de Pharmacy Times, Categorías de Reductor de Ácido/Acidez 2006-2014.", Request.QueryString["lang"])</p>
+                <p>@POTC.Extensions.Translate("** P&G calculation based on Nielsen ScanTrack FD+, 2004 - 2014", "^^Cálculos de P&G basados en Nielsen ScanTrack FD+, 2004-2014.", Request.QueryString["lang"])</p>
+            </div>
+                <div class="privacy">
+                        <a href="http://www.pg.com/privacy/@POTC.Extensions.Translate("english", "spanish", Request.QueryString["lang"])/privacy_notice.html" target="_blank" style="color:#fff">@POTC.Extensions.Translate("Privacy", "Política de privacidad", Request.QueryString["lang"])</a> 
+               | <a href="http://www.pg.com/terms.html" target="_blank" style="color: #fff">@POTC.Extensions.Translate("Legal Terms and Conditions", "Términos y condiciones", Request.QueryString["lang"])</a>
+               | <a href="http://www.pg.com/en_US/contact_us/index.shtml" target="_blank" style="color:#fff;">@POTC.Extensions.Translate("Contact Us", "Contáctenos", Request.QueryString["lang"])</a>
+               | <a href="http://www.pg.com/en_US/privacy/@POTC.Extensions.Translate("en_na", "span_amer_na", Request.QueryString["lang"])/oba_notice.shtml" target="_blank" style="color:#fff;">@POTC.Extensions.Translate("Ad Choices", "Opciones Publicitarias", Request.QueryString["lang"]) <img src="~/Images/adchoices.jpg" border="0" style="position:relative;top:5px;margin:0 0 0px 5px;" /></a>
+                        <br />
+                        <a href="http://www.bbb.org/cincinnati/business-reviews/manufacturers-and-producers/the-procter-gamble-company-in-cincinnati-oh-3036/#bbbonlineclick" target="_blank""><img src="https://s3.amazonaws.com/metamuciloz/bbb_logo.png" style="float:left;margin:0 0 0 15px;" alt="BBB" border="0" /></a>
+                        <div class="copyright">@POTC.Extensions.Translate("©2015 Procter & Gamble. All rights reserved. All copy and claims valid in the U.S.", "©2015 Procter & Gamble. Todos los derechos reservados. Todos los textos y reclamaciones válidos solamente en EE. UU.", Request.QueryString["lang"])</div>                        
+                </div>
+                @*<p>©Procter & Gamble @DateTime.Now.Year.ToString()</p>*@
+         
+        </div>
+
+    </div>                   
+   
+</div>
+    <script type="text/javascript">
+        (function () {
+            var tagjs = document.createElement("script");
+            var s = document.getElementsByTagName("script")[0];
+            tagjs.async = true;
+            tagjs.src = "//s.btstatic.com/tag.js#site=AK7okjI";
+            s.parentNode.insertBefore(tagjs, s);
+        }());
+</script>
+<noscript>
+  <iframe src="//s.thebrighttag.com/iframe?c=AK7okjI" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+</noscript>
+
+<noscript>
+<div>
+@*<img height="1" width="1" style="border-style:none;" alt=""  src="//www.googleadservices.com/pagead/conversion/977104823/?label=w8NbCNm1s1YQt9_10QM&amp;guid=ON&amp;script=0"/>*@
+</div>
+</noscript>
+    <asp:PlaceHolder ID="plpixels" runat="server"></asp:PlaceHolder>
+</body>
+</html>

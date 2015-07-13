@@ -1,0 +1,97 @@
+﻿@model POTC.Models.Order
+@{
+    ViewBag.Title = "Home Page";
+}
+
+   @using (Html.BeginForm()) {
+    @*Html.ValidationSummary(true)*@
+ 
+ <div id="formcontainer_index">  
+       <div class="alwaysheader">
+          <img  id="topimg" src="~/Images/@POTC.Extensions.Translate("samples_background.jpg", "samples_background_sp.jpg", Request.QueryString["lang"])" alt="" />
+
+             </div>
+   
+     <div class="">
+            <div id="errors"><br />
+                 <div class="purpletext">
+                    @POTC.Extensions.Translate("Request a Sample", "Muestra Gratis", Request.QueryString["lang"])
+                </div>
+                <b class="@POTC.Extensions.Translate("smalltext", "smalltext_sp", Request.QueryString["lang"])">@POTC.Extensions.Translate("Answer the questions below to qualify for your free sample.", "Responda las siguientes preguntas para calificar para su muestra gratis.", Request.QueryString["lang"])</b><br /><span class="@POTC.Extensions.Translate("smalltext", "smalltext_sp", Request.QueryString["lang"])" style="color:#f00">@Html.Raw(POTC.Extensions.Translate("<sup>#</sup>Required fields", "<sup>#</sup>Información requerida", Request.QueryString["lang"]))</span>
+
+            </div>
+            
+          
+     <div class="errors">
+     
+     </div>
+         
+
+         <div class="@Html.Raw(POTC.Extensions.Translate("indexfields", "indexfields_sp", Request.QueryString["lang"]))">
+           <div class="indexrow">
+                     <span class="indextitle">@Html.Raw(POTC.Extensions.Translate("How often do you suffer from heartburn each week?<sup>#</sup>", "¿Con qué frecuencia usted sufre de acidez estomacal?<sup>#</sup>", Request.QueryString["lang"]))</span>
+			<div class="txt">
+				<label class="ddlabel" style="padding-left: @POTC.Extensions.Translate("", "3.6%;", Request.QueryString["lang"])">
+
+                    <select data-val="true" data-val-required="*" id="Frequency" name="Frequency" style="width:250px;padding-left:20px;">
+                     <option value="">@POTC.Extensions.Translate("Select response", "seleccione la respuesta", Request.QueryString["lang"]) </option>
+                    <option value="7">@POTC.Extensions.Translate("7 days per week", "7 días por semana", Request.QueryString["lang"])</option>
+                    <option value="4to6">@POTC.Extensions.Translate("4 - 6 days per week", "4 - 6 días por semana", Request.QueryString["lang"])</option>
+                    <option value="2to3">@POTC.Extensions.Translate("2 - 3 days per week", "2 - 3 días por semana", Request.QueryString["lang"])</option>
+                    <option value="1">@POTC.Extensions.Translate("One day per week", "Un día a la semana", Request.QueryString["lang"])</option>
+                    <option value="N">@POTC.Extensions.Translate("Never", "Nunca", Request.QueryString["lang"])</option>
+
+                    </select>
+					 
+				</label>
+			</div>
+
+           </div>
+            <div class="indexrow"> <div class="indextitle">@Html.Raw(POTC.Extensions.Translate("What medication do you primarily use to treat your heartburn?<sup>#</sup>", "¿Qué medicamento contra la acidez tomas con frecuencia?<sup>#</sup>", Request.QueryString["lang"]))</div>
+			<div class="txt">
+				<label>
+                    <select data-val="true" data-val-required="*" id="Medication" name="Medication" style="width:250px;padding-left:20px;">
+                    <option value="">@POTC.Extensions.Translate("Select response", "seleccione la respuesta", Request.QueryString["lang"])</option>
+                    <option value="Nexium">Nexium&reg;24HR</option>
+                    <option value="Pepcid">Pepcid</option>
+                    <option value="Prevacid24HR">Prevacid&reg;24HR</option>
+                    <option value="Prilosec OTC">Prilosec OTC&reg;</option>
+                    <option value="Lanzoprazole">@Html.Raw(POTC.Extensions.Translate("Store-Brand Lanzoprazole", "Marca de la tienda Lanzoprazole", Request.QueryString["lang"]))</option>
+                    <option value="Omeprazole">@Html.Raw(POTC.Extensions.Translate("Store-Brand Omeprazole", "Marca de la tienda Omeprazole", Request.QueryString["lang"]))</option>
+                    <option value="Ranitidine">@Html.Raw(POTC.Extensions.Translate("Store-Brand Ranitidine", "Marca de la tienda Ranitidine", Request.QueryString["lang"]))</option>
+                    <option value="Famotidine">@Html.Raw(POTC.Extensions.Translate("Store-Brand Famotidine", "Marca de la tienda Famotidine", Request.QueryString["lang"]))</option>
+                    <option value="Tums/Rolaids">TUMS&reg;/Rolaids&reg</option>
+                    <option value="Zantac">Zantac</option>
+                    <option value="Zegerid OTC">Zegerid OTC&trade;</option>
+                    <option value="Other">@Html.Raw(POTC.Extensions.Translate("Other Store-Brand Heartburn Medicine", "Otras medicamentos contra la acidez", Request.QueryString["lang"]))</option>
+                    </select>
+				</label>
+			</div>
+       </div>
+             <div class="indexrow">
+                 <div class="indextitle">@Html.Raw(POTC.Extensions.Translate("Birth Date<sup>#</sup>", "Fecha De Nacimiento<sup>#</sup>", Request.QueryString["lang"]))</div>
+                    <div>
+                        
+                    
+                    <div class="dob">
+                      
+                                   @Html.DropDownListFor(x => x.Month, (List<SelectListItem>)POTC.Models.Utilities.GetMonths(), new { style = "width:92px;" })
+                      @Html.ValidationMessageFor(m => m.Month) 
+                  
+                    </div>
+                             
+                    <div>
+                         @Html.DropDownListFor(x => x.Year, (List<SelectListItem>)POTC.Models.Utilities.GetYears(), new { style = "width:92px;" })
+                     @Html.ValidationMessageFor(m => m.Year)
+                    </div>
+</div>
+                </div>
+         </div>
+     <div class="@POTC.Extensions.Translate("btn_index", "btn_index_sp", Request.QueryString["lang"])">
+         <input type="image" id="submit" src="~/Images/@POTC.Extensions.Translate("request_btn.png","request_btn_sp.png", Request.QueryString["lang"])" />
+     </div>
+     </div>
+   
+    
+  </div>     
+   }

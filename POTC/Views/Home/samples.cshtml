@@ -1,0 +1,133 @@
+﻿@model POTC.Models.Order
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+  @using (Html.BeginForm())
+  {
+    @Html.ValidationSummary(true)
+ <div id="formcontainer_samples">  
+       <div class="alwaysheader" style="line-height:40px;">
+          <img id="topimg" src="~/Images/@POTC.Extensions.Translate("samples_background.jpg", "Learn_more_one_sp.jpg", Request.QueryString["lang"])" alt="" />
+
+             </div>
+     <div id="errors"><br />
+                 <div class="purpletext">
+                    @POTC.Extensions.Translate("Request a Sample", "Muestra Gratis", Request.QueryString["lang"])
+                </div>
+                <b class="smalltext">@POTC.Extensions.Translate("Now that you’ve qualified, please enter your mailing address to receive your free sample!", "¡Ahora que ya calificaste, por favor escribe tu dirección para recibir tu muestra gratis!", Request.QueryString["lang"])</b><br /><span class="smalltext" style="color:#f00">@Html.Raw(POTC.Extensions.Translate("<sup>#</sup>Required fields", "<sup>#</sup>Información requerida", Request.QueryString["lang"]))</span>
+
+            </div>
+     <div class="fields">
+
+            <div  id="address_override" visible="false" class="smalltext">
+            </div>
+           
+     <div class="errors">
+         @Html.ValidationMessageFor(m => m.Address)
+     </div>
+       
+                     @if (ViewBag.match == "0")
+        {
+          
+                <div class="bypasstext left" style="width:515px;margin:20px 50px 0 0;color:#FF0000">
+                 <p> @POTC.Extensions.Translate("We were unable to verify your U.S. postal address; please verify that the format of your address is correct and avoid unknown abbreviations. Please note that this offer is for U.S. residents only; international addresses will be discarded. If you wish to continue with an unverified USPS address, please click the checkbox below to proceed.", "No hemos podido verificar su dirección postal de EE.UU.; por favor verifique que el formato de la dirección es correcta y evitar abreviaturas desconocidas. Tenga en cuenta que esta oferta es para residentes de Estados Unidos; direcciones internacionales serán descartados. Si desea continuar con una dirección no verificada USPS, por favor haga clic en la casilla de abajo para continuar.", Request.QueryString["lang"])</p>
+                <input type="checkbox" id="bypass" name="bypass" /><span class="small"> @POTC.Extensions.Translate("Please continue with unverified postal address.", "Por favor continúe con la dirección postal no verificada.", Request.QueryString["lang"])</span>
+                </div>
+            
+
+                 }
+
+
+         <div class="row">
+
+    <div class="title">@Html.Raw(POTC.Extensions.Translate("First Name<sup>#</sup>", "Nombre<sup>#</sup>", Request.QueryString["lang"]))
+			<div class="txt">
+				<label>
+					  @Html.TextBoxFor(m => m.FirstName, new{ maxlength = 30, width="250px"})
+                    @Html.ValidationMessageFor(m => m.FirstName)
+				</label>
+			</div>
+    </div>
+             <div class="title">@Html.Raw(POTC.Extensions.Translate("Last Name<sup>#</sup>", "Apellidos<sup>#</sup>", Request.QueryString["lang"]))
+			<div class="txt">
+				<label>
+					@Html.TextBoxFor(m => m.LastName, new { maxlength = 30 })
+@Html.ValidationMessageFor(m => m.LastName)
+				</label>
+			</div>
+                 </div>
+         </div>
+
+   <div class="row">
+   <div class="title">@Html.Raw(POTC.Extensions.Translate("Address 1<sup>#</sup>", "Dirección 1<sup>#</sup>", Request.QueryString["lang"]))
+       <div class="txt">
+				<label>
+					 @Html.TextBoxFor(m => m.Address, new { maxlength = 60 })
+                    @Html.ValidationMessageFor(m => m.Address)
+
+				</label>
+			</div>
+   </div>
+   <div class="title">@Html.Raw(POTC.Extensions.Translate("Address 2", "Dirección 2", Request.QueryString["lang"]))
+    <div class="txt">
+			<label>
+				@Html.TextBoxFor(m => m.Address2, new { maxlength = 60})
+			</label>
+		</div>
+   </div>
+   </div>
+ <div class="row">
+  <div class="title">@Html.Raw(POTC.Extensions.Translate("City<sup>#</sup>", "Ciudad<sup>#</sup>", Request.QueryString["lang"]))
+                 <div class="txt">
+				<label>
+					  @Html.TextBoxFor(m => m.City, new { maxlength = 30 })
+                        @Html.ValidationMessageFor(m => m.City)
+				</label>
+			</div>
+             </div>
+  <div class="title">
+      <span>@Html.Raw(POTC.Extensions.Translate("State<sup>#</sup>", "Estadó<sup>#</sup>", Request.QueryString["lang"]))</span>
+      <span style="padding-left:@POTC.Extensions.Translate("43%;", "39%", Request.QueryString["lang"])">@Html.Raw(POTC.Extensions.Translate("Zip<sup>#</sup>", "Código postal<sup>#</sup>", Request.QueryString["lang"]))</span>
+                 <div class="txt">
+                <div @*style="overflow:hidden;"*@>
+				<div style="float: left;padding-right: 15px;">
+					  @Html.DropDownListFor(x => x.State, (List<SelectListItem>)POTC.Models.Utilities.GetStates(), new { style = "width:160px;padding-left:20px;" })
+                   @Html.ValidationMessageFor(m => m.State)
+				</div>
+			
+				<div style="float:left;">
+					   @Html.TextBoxFor(m => m.Zip, new { onkeypress="return IsAlphaNumeric(event);", ondrop="return false;", onpaste="return false;" , maxlength = 10, style = "width:90px;" })
+                        @Html.ValidationMessageFor(m => m.Zip)
+				</div>
+                    </div>
+			</div>
+             </div>
+  </div>
+        
+ <div class="row">
+   <div class="title">@Html.Raw(POTC.Extensions.Translate("Email<sup>#</sup>", "Correo Electrónico:<sup>#</sup>", Request.QueryString["lang"]))
+       <div class="txt">
+				<label>
+					 @Html.TextBoxFor(m => m.Email, new { maxlength = 60 })
+                    @Html.ValidationMessageFor(m => m.Email)
+				</label>
+			</div>
+   </div>
+  
+   </div>
+     
+
+             
+     </div><br /><br />
+      <div style="margin: 0px auto;padding: 20px 50px 0 1%;text-align: left;">
+              
+                        <div class="smalltextoptin left" style="margin:20px 50px 0 0;">@Html.CheckBoxFor(m => m.optin, new { @checked = "checked" })@*<input type="checkbox" id="optin" checked="checked" />*@@Html.Raw(POTC.Extensions.Translate("Yes! Sign me up to receive occasional emails from Prilosec OTC as well as emails from other trusted P&G brands which will help me:  <ul><li>Save money with exclusive coupons</li><li>Get inspired with useful tips & ideas</li><li>Learn about free samples, new products, exciting promotions and other information from P&G and carefully-selected business partners.</li></ul>", "¡Sí! Deseo inscribirme para recibir correos electrónicos de Prilosec OTC y también de otras marcas de confianza de P&G que me ayudarán a: <ul><li>Ahorrar dinero con cupones exclusivos</li><li>Obtener consejos e ideas útiles</li><li>Aprender más acerca de las muestras gratis, productos nuevos, promociones fabulosas y más información de P&G, así como de socios comerciales cuidadosamente seleccionados</li></ul>" ,Request.QueryString["lang"]))</div>
+                         <div class="smalltextoptin left" style="margin:20px 50px 0 0;">@Html.Raw(POTC.Extensions.Translate("Trust is a cornerstone of our corporate mission, and the success of our business depends on it.  P&G is committed to maintaining your trust by protecting personal information we collect about you, our consumers.  Click <a href=\"http://www.pg.com/privacy/english/privacy_statement.shtml\" target=\"_blank\" class=\"links\"><u>here</u></a> for the full details of our Privacy Statement." , "La confianza es la piedra angular de nuestra misión corporativa y el éxito de nuestro negocio depende de ello. P & G se compromete a mantener su confianza protegiendo la información personal que recopilamos sobre usted, nuestros consumidores. Haga clic <a href=\"http://www.pg.com/privacy/spanish/privacy_statement.shtml\" target=\"_blank\" class=\"links\"><u>aqui</u></a> para ver los detalles de nuestra política de privacidad." , Request.QueryString["lang"]))</div>    
+         </div>
+   <div class="btn_samples">
+         <input type="image" id="submit" src="~/Images/@POTC.Extensions.Translate("request_btn.png","request_btn_sp.png", Request.QueryString["lang"])" />
+     </div>
+
+     </div>
+  }

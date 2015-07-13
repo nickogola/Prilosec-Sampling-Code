@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "eligibility";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div id="formcontainer_2">  
+       <div class="alwaysheader" style="line-height:40px;">
+          <img id="imgthankyou" src="~/Images/@POTC.Extensions.Translate("samples_background.jpg", "Learn_more_one_sp.jpg", Request.QueryString["lang"])" alt="" />
+
+             </div>
+
+    <div>
+      <div class="purpletext">
+                    @POTC.Extensions.Translate("SORRY!", "¡LO SENTIMOS!", Request.QueryString["lang"])
+                </div>
+        <div class="littletext" style="padding: 5px;">@Html.Raw(POTC.Extensions.Translate("We're sorry, but we can't accept your messages or personal information because you do not meet our eligibility requirements. But that doesn't mean you can't explore the rest of our site and learn more about us! Check out <a href=\"http://www.pg.com\" target=\"_blank\" style=\"color:#924EBC; font-size: 22pt;\">www.pg.com</a> for information about P&G and its brands.", "Lo sentimos, pero no podemos aceptar su mensaje o información personal, ya que no cumple con nuestros requisitos de elegibilidad. Sin embargo, eso no significa que no pueda explorar el resto de nuestra web y ¡aprender más de nosostros! Visite <a href=\"http://www.pg.com\" target=\"_blank\" style=\"color:#924EBC; font-size: 22pt;\">www.pg.com</a> para más información sobre P&G y sus marcas.", Request.QueryString["lang"]))</div>
+
+        @*<div class="logos">
+
+            <a href="https://www.facebook.com/pages/Free-Prilosec-OTC-Samples-And-Coupons/160074960774148" target="_blank" class="share"><img src="https://s3.amazonaws.com/metamucil/icon_fb.jpg" border="0" style="float:left;" alt="Facebook"></a>
+            <a href="javascript:void(0);" target="_blank" onclick="window.open('http://twitter.com/share?text=Get your free Prilosec Sample&amp;url=https://prilosec-otc.safeprocessing.com/get','','menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=250,width=600');"><img src="https://s3.amazonaws.com/metamucil/icon_twitter.jpg" border="0" style="float:left;" alt="Twitter"></a>
+
+            <a href="https://plus.google.com/share?url=https://prilosec-otc.safeprocessing.com/get" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+                <img src="https://www.gstatic.com/images/icons/gplus-32.png" alt="Share on Google+" style="border:0;width:37px;height:37px;"></a>
+        </div>*@
+    </div>
+    </div>
